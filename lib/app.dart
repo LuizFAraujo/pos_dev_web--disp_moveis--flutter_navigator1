@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 
 import 'routes/app_routes.dart';
 import 'screens/cadastro_screen.dart';
+import 'screens/dashboard_screen.dart';
 import 'screens/login_screen.dart';
+import 'screens/sobre_screen.dart';
 import 'screens/tela_principal_screen.dart';
 
 class MyApp extends StatelessWidget {
@@ -21,26 +23,9 @@ class MyApp extends StatelessWidget {
         AppRoutes.login: (_) => const LoginScreen(),
         AppRoutes.cadastro: (_) => const CadastroScreen(),
         AppRoutes.telaPrincipal: (_) => const TelaPrincipalScreen(),
-
-        AppRoutes.dashboard: (_) => const PlaceholderScreen(title: 'Dashboard'),
-        AppRoutes.sobre: (_) => const PlaceholderScreen(title: 'Sobre'),
+        AppRoutes.dashboard: (_) => const DashboardScreen(),
+        AppRoutes.sobre: (_) => const SobreScreen(),
       },
-    );
-  }
-}
-
-/// Tela temporária que exibe apenas o título.
-/// Utilizada para não quebrar o projeto antes das telas reais existirem.
-class PlaceholderScreen extends StatelessWidget {
-  final String title;
-
-  const PlaceholderScreen({super.key, required this.title});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(title)),
-      body: Center(child: Text('Tela: $title')),
     );
   }
 }
