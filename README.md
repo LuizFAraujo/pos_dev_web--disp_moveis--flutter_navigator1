@@ -1,11 +1,7 @@
 # pos_dev_web--disp_moveis--flutter_navigator1
 Atividade prática do curso de Pós-Graduação em Desenvolvimento Web - IFSP.
 
-## app_flutter_navigator1
-
-A new Flutter project.
-
-### Getting Started
+## Getting Started
 
 This project is a starting point for a Flutter application.
 
