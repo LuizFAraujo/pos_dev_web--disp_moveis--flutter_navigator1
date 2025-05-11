@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 
 import 'routes/app_routes.dart';
+import 'screens/cadastro_screen.dart';
 import 'screens/login_screen.dart';
 
 class MyApp extends StatelessWidget {
@@ -17,8 +18,8 @@ class MyApp extends StatelessWidget {
       initialRoute: AppRoutes.login,
       routes: {
         AppRoutes.login: (_) => const LoginScreen(),
+        AppRoutes.cadastro: (_) => const CadastroScreen(),
 
-        AppRoutes.cadastro: (_) => const PlaceholderScreen(title: 'Cadastro'),
         AppRoutes.telaPrincipal:
             (_) => const PlaceholderScreen(title: 'Tela Principal'),
         AppRoutes.dashboard: (_) => const PlaceholderScreen(title: 'Dashboard'),
