@@ -17,10 +17,12 @@ lib/
 │   ├── dashboard_content.dart      # Tela de exemplo (conteúdo)
 │   └── sobre_content.dart          # Tela de informações
 │
-├── widgets/
-│   └── base_screen.dart            # Scaffold com BottomNavigationBar e troca de views
-
-
+├── widgets/                        # Componentes reutilizáveis
+│   ├── base_screen.dart            # Navegação por BottomNavigationBar
+│   ├── auth_form_container.dart    # Layout padrão de formulário (padding, scroll, centralização)
+│   ├── auth_header.dart            # Cabeçalho com ícone e título
+│   ├── app_text_field.dart         # Campo de texto com InputDecoration padronizado
+│   └── app_button.dart             # Botão estilizado (elevated ou outlined)
 	
 ```
 
