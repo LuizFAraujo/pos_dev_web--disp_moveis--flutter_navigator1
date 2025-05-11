@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'routes/app_routes.dart';
 import 'screens/cadastro_screen.dart';
 import 'screens/login_screen.dart';
+import 'screens/tela_principal_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -19,9 +20,8 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.login: (_) => const LoginScreen(),
         AppRoutes.cadastro: (_) => const CadastroScreen(),
+        AppRoutes.telaPrincipal: (_) => const TelaPrincipalScreen(),
 
-        AppRoutes.telaPrincipal:
-            (_) => const PlaceholderScreen(title: 'Tela Principal'),
         AppRoutes.dashboard: (_) => const PlaceholderScreen(title: 'Dashboard'),
         AppRoutes.sobre: (_) => const PlaceholderScreen(title: 'Sobre'),
       },
